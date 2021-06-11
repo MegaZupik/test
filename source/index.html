@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Alta Roma Аренда кофемашин</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+	  <body class="page__body">
+	  	<div class="page-header">
+	  		<button class="nav-toggle">
+                             <span class="bar-top"></span>
+                             <span class="bar-mid"></span>
+                             <span class="bar-bot"></span>
+
+            </button>
+			<a href="#" class="header-logo"><img src="img1\logo.png" width="198" height="52" alt="logo"></a>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list_item"><a href="#">Главная</a></li>
+					<li class="site-list_item"><a href="#">Каталог</a></li>
+					<li class="site-list_item"><a href="#">Подобрать решение</a></li>
+					<li class="site-list_item"><a href="#">Дестрибьюторы</a></li>
+					<li class="site-list_item"><a href="#">О компании</a></li>
+				</ul>
+			</div>
+			<div class="header-contacts">
+				<p class="header-phone">8 800 555 07 01</p>
+				<p class="contact">оставить заявку</p>
+			</div>
+		</div>
+			<div class="section">
+				<ul class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">аренда кофемашин</a></li>
+				</ul>
+					<div class="block__info">
+						<h1>Бесплатная аренда<br> профессиональных кофемашин</h1>
+						<ul class="features">
+							<li class="features__item">Новые кофемашины</li>
+							<li class="features__item">обслужим и доставим</li>
+							<li class="features__item">Установим за 1 день</li>
+							<li class="features__item">Обучим персонал</li>
+						</ul>
+							<div class="block__button">
+								<input class='button' type="button" value="Подобрать оборудование">
+								<input class='button' type="button" value="Бесплатная дегустация">
+							</div>
+								<div class="block__galery">
+									<div class="galery__image">
+										<img src="img1\galery1.png"  width="189" height="189" alt="galery-image">
+										<div class="galery__description"><p>В офис</p></div>
+									</div>
+									<div class="galery__image">
+										<img src="img1\galery2.png" width="189" height="189" alt="galery-image">
+										<div class="galery__description"><p>В ресторан</p></div>
+									</div>
+									<div class="galery__image">
+										<img src="img1\galery3.png"  width="189" height="189" alt="galery-image">
+										<div class="galery__description"><p>В гостиницу</p></div>
+									</div>
+								</div>
+					</div>	
+			</div>	
+		<div class="modal">
+			<div class="modal__content">
+				<h1 class="modal__title">Оставить заявку</h1>
+				<div class="form_info">
+					<p>Пожалуйста, заполните форму, чтобы мы могли связаться с Вами для обсуждения деталей заявки. </p>
+				</div>
+				<form action="#" method="post" enctype='multipart/form-data'>
+					<div class="infoGrid">
+						<input type="text" id="username" class="userInfo" name="username" placeholder='Имя*' required>
+						<input type="tel" id="userPhone" class="userInfo" name="userPhone" placeholder='Телефон*' pattern="[\+][0-9]{11}" required>
+						<input type="text" id="userTown" class="userInfo" name="userTown" placeholder='Город*' required>
+						<input type="email" id="email" class="userInfo" name="userMail" placeholder='E-mail*' required>
+					</div>
+					<div class="tips">
+						<p>* Поля, обязательные для заполнения</p>
+					</div>
+					<input type="checkbox" class="custom-checkbox" id="happy" name="happy" onChange="changeButtonState(this)" value="yes">
+					<label class="accept" for="happy">Согласие на<a href="#">&nbsp;обработку персональных данных</a></label>
+					<input class="submit" id="invisible" type="submit" value="ОСТАВИТЬ ЗАЯВКУ">
+					<button class="modal__button button-close" type="button">Закрыть</button>
+			</div>
+		</div>
+			</div>
+				<script src="js/script.js"></script>
+  </body>
+</html>

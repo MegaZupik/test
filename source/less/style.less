@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: lato;
+}
+
+
+.page__body{
+	background-color: #222937;
+	color:white;
+	max-width: 1440px;
+	min-width: 1000px;
+	margin: 0 auto;
+	margin-top: 21px;
+
+
+}
+
+.hidden{
+	display: none !important;
+}
+.section{
+	@media (max-width: @tablet-width)  {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+@import "page-header.less";
+@import "section.less";
+@import "modal.less";
+
+
+
+
+.page__body{
+	@media (max-width: @tablet-width)  {
+		min-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
